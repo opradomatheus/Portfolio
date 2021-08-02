@@ -162,7 +162,7 @@ img{
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: var(--color2);
+        background-color: #000000ec;
         transition: .5s;
     }
 }
@@ -191,9 +191,12 @@ img{
     background-color: var(--color1);   
 }
 
-.nav__logo{
-   color: var(--color2); 
+.nav__logo img{
+    width: 60%;
+    height: var(--header-height);
+   
 }
+
 .nav__toggle{
     color: var(--color2); 
     font-size: 1.5rem;
@@ -215,6 +218,5 @@ img{
 /*SHOW MENU*/
 
 .show{
-    right: 0;
-    
+    right: 0;  
 }
