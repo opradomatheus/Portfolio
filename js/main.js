@@ -31,26 +31,16 @@ function linkAction(){
 
     navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*SCROLL REVEAL ANIMATION*/
-
-
-
-/*SCROLL HOME/
-
-
-
-/*SCROLL ABOUT*/
-
-
-
-/*SCROLL SKILLS/
-
-
-
-/*SCROLL WORK*/
-
-
-
-
-
-/*SCROLL CONTACT*/
+    function sendEmail() {
+        Email.send({
+        Host: "smtp.gmail.com",
+        Username : "tm.ferreira.prado@gmail.com",
+        Password : "d0c6n06552xp",
+        To : 'tm.ferreira.prado@gmail.com',
+        From : "tm.ferreira.prado@gmail.com",
+        Subject : "Olá, Julia Silva",
+        Body : "Olá, mundo!",
+        }).then(
+            message => alert("E-mail enviado com sucesso!")
+        );
+    }
