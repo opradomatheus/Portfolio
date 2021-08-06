@@ -14,7 +14,7 @@
 /*CORES*/
 
 :root{
-    --color1: #f39bd1 ;
+    --color1: #dba695 ;
     --color2: #0e2431;
     
 }
@@ -306,6 +306,7 @@ img{
 .about__img img{
     width: 200px;
     border-radius: .5rem;
+    box-shadow: 0 10px 15px #0000007c;
 }
 
 /*SKILLS*/
@@ -380,7 +381,7 @@ img{
 }
 
 .work_img:hover{
-    background-color:rgb(253, 146, 191);
+    background-color:var(--color1);
 }
 
 
@@ -566,19 +567,32 @@ img{
     .contact__form{
         margin-top: 3rem;
     }
+
+    .about__subtitle{
+        margin-top: -420px;
+        font-size: 2rem;
+    }
+
+    .about__text{
+        font-size: 1.2rem;
+    }
 }
 
 
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1300px) {
     bd-grid{
         margin-left: auto;
         margin-right: auto;
     }
 
     .home__img{
-        width: 700px;
+        width: 600px;
         margin-right: 3rem;
+    }
+    
+    .home__img img{
+        width: 100%;
     }
 
     .home_title{
@@ -591,7 +605,6 @@ img{
 
     .home__img img{
         width: 100%;
-       
     }
 
     .home__social-icon{
@@ -600,11 +613,11 @@ img{
 
     .about__img img{
         margin-top: -250px;
-        width: 500px;
+        width: 400px;
     }
 
     .about__subtitle{
-        margin-top: -420px;
+        margin-top: -350px;
         font-size: 2rem;
     }
 
@@ -647,8 +660,8 @@ img{
         width: 100%;
     }
 
-    .skills__img{
-        width: 600px;
+    .skills__container.bd-grid{
+        margin-top: -100px;
     }
 
     .home__social-icon{
@@ -658,7 +671,7 @@ img{
     }
 
     .section-title{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .section-title::after{
@@ -669,7 +682,7 @@ img{
         left: 0;
         right: 0;
         margin: auto;
-        top: 4rem;
+        top: 2.5rem;
         background-color: var(--color1);
     }
 
@@ -679,10 +692,14 @@ img{
         margin: auto;
         border: none;
         outline: none;
-    
+        margin-top: -7px;
     }
     .contact__container.bd-grid{
-       height: 500px;
+       height: 460px;
+        margin-top: -70px;
+    }
 
+    .footer{
+        padding: 10px;
     }
 }
